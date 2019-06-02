@@ -4,7 +4,9 @@
   "description": "Creates a Lambda deployment package for Node.js applications",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "npm run-script --silent build"
   },
   "bin": {
     "lambdapack": "./bin/lambdapack"
