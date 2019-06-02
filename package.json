@@ -8,6 +8,7 @@
     "build": "tsc",
     "prepare": "npm run-script --silent build"
   },
+  "files": ["bin", "dist"],
   "bin": {
     "lambdapack": "./bin/lambdapack"
   },
